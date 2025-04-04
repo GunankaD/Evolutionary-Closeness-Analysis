@@ -1,0 +1,31 @@
+Project Structure: DNA-Based Evolutionary Closeness Analysis
+
+1️⃣ Data Collection
+Use NCBI Entrez to fetch DNA sequences of two species.
+
+Save sequences in FASTA format.
+
+2️⃣ Sequence Processing
+Read and parse sequences using Biopython’s SeqIO module.
+
+Ensure sequences are properly formatted (remove gaps, unknown bases).
+
+3️⃣ Sequence Alignment
+Use Pairwise Alignment (Needleman-Wunsch or Smith-Waterman).
+
+Alternatively, use BLAST to find homologous regions.
+
+4️⃣ Similarity Calculation
+Compute percent identity (how much of the sequences match).
+
+Calculate evolutionary distance using substitution models.
+
+5️⃣ (Optional) Phylogenetic Analysis
+Construct a phylogenetic tree using ClustalW or Biopython’s Phylo module.
+
+Visualize the tree to show evolutionary relationships.
+
+6️⃣ Output & Interpretation
+Display similarity percentage & relationship insights.
+
+(Optional) Save results as a report or graphical tree.

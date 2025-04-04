@@ -1,0 +1,54 @@
+Project: DNA-Based Evolutionary Closeness Analysis 🧬🔬
+Here’s a high-level layout of your Biopython program:
+
+1️⃣ Import Libraries
+
+from Bio import Entrez, SeqIO, pairwise2, Phylo
+
+Entrez: Fetch DNA sequences from NCBI.
+
+SeqIO: Read and parse sequences.
+
+pairwise2: Align sequences and compute similarity.
+
+Phylo: Build and visualize phylogenetic trees.
+
+2️⃣ Fetch DNA Sequences from NCBI
+
+def fetch_sequence(species_name):
+    # Search NCBI for the species and fetch the sequence in FASTA format
+    return sequence
+
+3️⃣ Perform Sequence Alignment
+
+def align_sequences(seq1, seq2):
+    # Use Needleman-Wunsch or Smith-Waterman alignment
+    return similarity_score
+
+
+4️⃣ Compute Evolutionary Closeness
+
+def compute_similarity(seq1, seq2):
+    # Calculate percentage similarity based on alignment
+    return similarity_percent
+
+
+5️⃣ (Optional) Build a Phylogenetic Tree
+
+def construct_phylogenetic_tree(sequences):
+    # Generate tree and visualize relationships
+
+6️⃣ Main Function to Run the Program
+
+if __name__ == "__main__":
+    species1 = "Homo sapiens"
+    species2 = "Pan troglodytes"  # Example: Human vs. Chimpanzee
+
+    seq1 = fetch_sequence(species1)
+    seq2 = fetch_sequence(species2)
+
+    similarity = compute_similarity(seq1, seq2)
+    print(f"Similarity between {species1} and {species2}: {similarity}%")
+This gives a modular structure—you can build and test each part separately! 🚀
+
+Want to start with fetching sequences or alignment first? 🔬
