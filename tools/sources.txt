@@ -1,0 +1,1 @@
+muscle-win64.v5.3.exe = https://github.com/rcedgar/muscle/releases
