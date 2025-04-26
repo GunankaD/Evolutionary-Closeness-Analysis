@@ -1,0 +1,60 @@
+📜 Project: DNA-Based Evolutionary Closeness Analysis (COX1 Focus)
+
+
+1️⃣ Import Libraries
+
+from Bio import Entrez, SeqIO, AlignIO
+from Bio.Align.Applications import MuscleCommandline
+import subprocess
+import os
+
+
+2️⃣ Fetch COX1 Sequences from NCBI
+Function: fetch_cox1_sequence(species_name)
+
+Query NCBI for the COX1 gene of the given species.
+
+Fetch FASTA sequence.
+
+Return the sequence.
+
+
+
+3️⃣ Save Sequences to a Temporary FASTA File
+Function: save_sequences_to_fasta(seq1, seq2, file_path)
+
+Save both sequences into a FASTA file for MUSCLE to read.
+
+
+
+4️⃣ Align Sequences using MUSCLE
+Function: align_sequences_muscle(input_fasta, output_fasta)
+
+Call MUSCLE via command line to align sequences.
+
+Output aligned FASTA.
+
+
+
+
+5️⃣ Compute Similarity
+Function: compute_similarity(aligned_fasta)
+
+Read aligned sequences.
+
+Compare base-by-base.
+
+Calculate % similarity.
+
+
+
+
+6️⃣ Main Program
+Input: Two species names.
+
+Fetch → Save → Align → Compute → Output similarity %.
+
+🛠️ Folder setup needed:
+MUSCLE executable in PATH (or give direct path).
+
+Create a temporary folder for FASTA files (like /tmp/).
